@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 %
 \makeatletter
@@ -278,6 +279,7 @@ of Electrical Engineering, Indian Institute of Technology, Hyderabad
 \tableofcontents
 
 \bigskip
+\fi
 
 \begin{abstract}
 This manual shows how to build a calculator using Python and shared C libraries.  Through this, even 
@@ -307,7 +309,6 @@ beginners can learn how to build some simple software applications with graphica
 %
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
-\IEEEpeerreviewmaketitle
 
 
 %\newpage
@@ -319,41 +320,44 @@ beginners can learn how to build some simple software applications with graphica
 %\newpage
 
 \section{Python Calculator}
-\begin{problem}
-\label{prob:calc}
-Download the python code from \cite{tkcalc}
-%\href{https://github.com/gadepall/EE1083/blob/master/calculator/codes/solution/pythonprogs/tkcalc.py}{\url{code}} from 
-%\begin{lstlisting}
-%https://github.com/gadepall/EE1083/blob/master/calculator/codes/solution/pythonprogs/tkcalc.py
-%\end{lstlisting}
-and execute it.
-\end{problem}
+\begin{enumerate}
+
+\item
+\label{prob:EE1083/calculator/software/codes/calc}
+Execute
+%\href{https://github.com/gadepall/EE1083/blob/master/calculator//EE1083/calculator/software/codes/solution/pythonprogs/tkcalc.py}{\url{code}} from 
+\begin{lstlisting}
+calculator//EE1083/calculator/software/codes/solution/pythonprogs/tkcalc.py
+\end{lstlisting}
+
+\end{enumerate}
 
 \section{Shared Libraries in GCC}
-\begin{problem}
+\begin{enumerate}
+\item
 Write a C function to multiply two given numbers. Save it in the file titled as \textbf{mul.c}
-\end{problem}
+
 \solution
-\lstinputlisting{./codes/cprogs/mul.c}
-\begin{problem}
+\lstinputlisting{.//EE1083/calculator/software/codes/cprogs/mul.c}
+\item
 Open the Terminal and go to the directory where the \textbf{mul.c} file is saved.
-\end{problem}
-\begin{problem}
+
+\item
 Type the following command in the Terminal.
-\end{problem}
+
 \solution
 \begin{lstlisting}
 cc -fPIC -shared -o mul.so mul.c
 \end{lstlisting}
 Note that you will have to use the \textbf{-lm} switch for \textbf{math.h } functions.
-\begin{problem}
+\item
 Type the following program in \textbf{main.c}
-\end{problem}
+
 \solution
-\lstinputlisting{./codes/cprogs/main.c}
-\begin{problem}
+\lstinputlisting{.//EE1083/calculator/software/codes/cprogs/main.c}
+\item
 Run the above program
-\end{problem}
+
 \solution
 \begin{lstlisting}
 gcc main.c mul.so -Wl,-rpath=$(pwd)
@@ -361,45 +365,49 @@ gcc main.c mul.so -Wl,-rpath=$(pwd)
 \end{lstlisting}
 The advantange of using \textbf{mul.so} is that the multiplication function needs to be compiled only once.  It can then be
 used in any C program.
-\begin{problem}
+\item
 Repeat the above exercises for adding two numbers.
-\end{problem}
-%\begin{problem}
+
+%\item
 %Download the python code from \href{http://tlc.iith.ac.in/resources/tkcalc.py}{\url{http://tlc.iith.ac.in/resources/tkcalc.py}} and execute it.
 %%\begin{lstlisting}
 %%http://tlc.iith.ac.in/resources/tkcalc.py
 %%\end{lstlisting}
-%\end{problem}
-\begin{problem}
-Write all the required C routines for the calculator in Problem \ref{prob:calc} and generate the shared libraries. Test all the routines.
-\end{problem}
+%
+\item
+Write all the required C routines for the calculator in Problem \ref{prob:EE1083/calculator/software/codes/calc} and generate the shared libraries. Test all the routines.
 
+\end{enumerate}
 \section{Shared libraries in Python}
-%\lstinputlisting{./codes/commands}
-\begin{problem}
+\begin{enumerate}
+%\lstinputlisting{.//EE1083/calculator/software/codes/commands}
+\item
 Write a Python script to multiply two numbers using C function.
-\end{problem}
+
 \solution
-\lstinputlisting{./codes/pythonprogs/mul.py}
-\begin{problem}
+\lstinputlisting{.//EE1083/calculator/software/codes/pythonprogs/mul.py}
+\item
 Call the function written above in the Python GUI calculator to perform multipication.
-\end{problem}
+
 
 \solution
-Download \textbf{calc\_mul\_root.py} file from the \cite{calc_mul_root} and save it in directory where \textbf{mul.c} is saved.  Execute  \textbf{calc\_mul\_root.py}.
+Save 
+		\begin{lstlisting}
+EE1083/calculator/software/codes/pythonprogs/calc_mul_root.py
+		\end{lstlisting}
+in directory where \textbf{mul.c} is saved.  Execute  \textbf{calc\_mul\_root.py}.
 
-\begin{problem}
+\item
 Use C routines in \textbf{calc\_mul\_root.py} for all arithmetic operations in the calculator.
-\end{problem}
+
+\end{enumerate}
 \section{Integer Triangles}
-\begin{problem}
+\begin{enumerate}
+\item
 Given the perimeter of a triangle (it should be an integer) write a C program to find all the possible triangles with integer sides.  
 You just have to print the lengths of the sides of each such triangle.
-\end{problem}
-\begin{problem}
-Create a GUI application in Python for the previous problem.
-\end{problem}
 
-\bibliography{IEEEabrv,hemanth_cpython.bib}
-\end{document}
+\item
+Create a GUI application in Python for the previous problem.
+\end{enumerate}
 

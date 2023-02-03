@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.1.3)  3 FEB 2023 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.1.3)  3 FEB 2023 11:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1202,7 +1202,7 @@ LaTeX Info: Redefining \nameref on input line 25.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-<figs/logo.jpg, id=27, 642.4pt x 642.4pt>
+<figs/logo.jpg, id=47, 642.4pt x 642.4pt>
 File: figs/logo.jpg Graphic file (type jpg)
 <use figs/logo.jpg>
 Package pdftex.def Info: figs/logo.jpg  used on input line 51.
@@ -1361,7 +1361,7 @@ ted-to.pdf>
 b1005-eps-converted-to.pdf ./EE1083/pythonc/figs/ee16b1005.eps>
 (epstopdf)             \includegraphics on input line 343.
 Package epstopdf Info: Output file is already uptodate.
-<./EE1083/pythonc/figs/ee16b1005-eps-converted-to.pdf, id=131, 462.72874pt x 34
+<./EE1083/pythonc/figs/ee16b1005-eps-converted-to.pdf, id=157, 462.72874pt x 34
 6.29375pt>
 File: ./EE1083/pythonc/figs/ee16b1005-eps-converted-to.pdf Graphic file (type p
 df)
@@ -1547,16 +1547,45 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [24
 
 ]
+Chapter 4.
+(./EE1083/calculator/software/hemanth_cpython.tex
+(.//EE1083/calculator/software/codes/cprogs/mul.c
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25])
+(.//EE1083/calculator/software/codes/cprogs/main.c)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+(.//EE1083/calculator/software/codes/pythonprogs/mul.py
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
 No file main.ind.
 (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 24308205042CC96235CB88BC43E626EC;264.
+(rerunfilecheck)             Checksum: 4D5FA87762812FCF0585FC2D10DE40D0;583.
  ) 
 Here is how much of TeX's memory you used:
- 37922 strings out of 479304
- 833321 string characters out of 5869780
- 1786420 words of memory out of 5000000
- 53937 multiletter control sequences out of 15000+600000
+ 38113 strings out of 479304
+ 836058 string characters out of 5869780
+ 1786462 words of memory out of 5000000
+ 54047 multiletter control sequences out of 15000+600000
  416683 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,9n,116p,736b,2231s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1575,10 +1604,10 @@ re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on main.pdf (30 pages, 267756 bytes).
+Output written on main.pdf (34 pages, 280386 bytes).
 PDF statistics:
- 810 PDF objects out of 1000 (max. 8388607)
- 731 compressed objects within 8 object streams
- 483 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 926 PDF objects out of 1000 (max. 8388607)
+ 842 compressed objects within 9 object streams
+ 551 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

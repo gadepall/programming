@@ -4,3 +4,8 @@
 \contentsline {section}{\numberline {1.1}Software Installation}{1}{section.1.1}%
 \contentsline {chapter}{\numberline {2}The First Program}{3}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Data Structures}{13}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Shared Libraries}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Python Calculator}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Shared Libraries in GCC}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Shared libraries in Python}{27}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Integer Triangles}{28}{section.4.4}%
